@@ -9,6 +9,5 @@ WORKDIR /opt/content/
 RUN npm i gm
 RUN npm install -g express
 RUN npm install --unsafe-perm node-sass
-RUN npm run deploy
 WORKDIR /opt
 CMD ["zip", "-r", "content_service.zip", "content"]
