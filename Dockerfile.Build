@@ -4,6 +4,7 @@ RUN apk update \
    && apk add zip \
    && mkdir -p /opt/content
 RUN apk add python make g++
+RUN apk add --update nodejs nodejs-npm
 ADD src /opt/content/
 WORKDIR /opt/content/
 RUN npm i gm
